@@ -1,16 +1,82 @@
-# Bootstrap w/ Vite
+# 🌏 Disaster Monitoring System
 
-Include [Bootstrap](https://getbootstrap.com)'s source Sass and individual JavaScript plugins with [Vite](https://vitejs.dev/).
+A web-based Disaster Monitoring System designed to record, manage, and monitor disaster-related data efficiently. This system was developed as a capstone project to demonstrate full-stack web development skills, database design, and real-world data management workflows.
 
-## Edit in browser
+---
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/twbs/examples/tree/main/vite?file=index.html)
+## 📌 Overview
 
-## How to use
+The Disaster Monitoring System is built to help organize and track disaster-related reports and records in a centralized system. It allows structured data entry, monitoring, and retrieval of information through a simple web interface.
 
-```sh
-git clone https://github.com/twbs/examples.git
-cd examples/vite/
-npm install
-npm start
-```
+This project simulates real-world administrative workflows used in data management systems for public safety and reporting.
+
+---
+
+## ⚙️ Features
+
+- User authentication and session management
+- Disaster data entry and management
+- Record tracking and updates
+- Structured database integration (MySQL)
+- Clean and simple web interface
+- Organized data retrieval and display
+
+---
+
+## 🛠️ Tech Stack
+
+- PHP (Backend)
+- MySQL (Database)
+- HTML, CSS, JavaScript (Frontend)
+- XAMPP (Local Development Environment)
+
+---
+
+## 📁 Project Structure
+src/
+├── (application files)
+index.php
+package.json
+package-lock.json
+.gitignore
+README.md
+
+---
+
+## 🚀 Installation & Setup
+
+To run this project locally:
+
+1. Install XAMPP
+2. Clone this repository:
+   ```bash
+   git clone https://github.com/DelayolaL/disaster-monitoring-system.git
+3. Move project folder to:
+   C:\xampp\htdocs\
+4. Start Apache and MySQL in XAMPP
+5. Import database (if included) via phpMyAdmin
+6. Open browser and go to:
+   http://localhost/index.php - I recommend having a folder for a more organized structure (ex. http://localhost/system/index.php)
+
+---
+
+👤 Role & Contribution
+
+  This project was developed as a solo capstone project. Responsibilities included:
+
+  System design and development
+  Database schema creation
+  Backend logic implementation using PHP
+  Frontend interface development
+  Testing and debugging
+
+---
+
+📌 Purpose
+
+This project demonstrates practical skills in:
+
+Full-stack web development
+Database-driven applications
+CRUD operations
+System design and workflow simulation
