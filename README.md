@@ -65,7 +65,7 @@ To run this project locally:
 
 This project demonstrates practical skills in:
 
-Full-stack web development
-Database-driven applications
-CRUD operations
-System design and workflow simulation
+- Full-stack web development
+- Database-driven applications
+- CRUD operations
+- System design and workflow simulation
