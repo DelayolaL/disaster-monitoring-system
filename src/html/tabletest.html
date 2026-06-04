@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+</head>
+<body>
+    <form method="post" action="ui-forms.php">
+<table>
+    <thead>
+      <tr>
+        <th>Family members</th>
+        <th>Relation to Family Head</th>
+        <th>Age</th>
+        <th>Gender</th>
+        <th>Civil Status</th>
+        <th>Education</th>
+        <th>Occupation</th>
+        <th>Remarks</th>
+        </tr>
+    </thead>
+    <tbody id="data-table">
+ <tr>
+        <td><input id="fammember" type="text" name="fammember[]" style="resize: none;width: auto;" rows="1"></td>
+        <td><select style="width: auto;" name="famrelation[]" required>
+              <option value="">Choose</option>
+              <option value="Spouse">Spouse</option>
+              <option value="Child">Child</option>
+              <option value="Relative">Relative</option>
+              <option value="Friend">Friend</option>
+              <option value="Acquaintance">Acquaintance</option>
+              <option value="Stranger">Stranger</option>
+              </select>
+        </td>
+        <td><input id="famage" type="number" name="famage[]" style="resize: none;width: 60px;" rows="1"></td>
+        <td>
+          <select id="famgender" style="width: auto;" name="famgender[]" required>
+            <option value="">Choose...</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+          </td>
+        <td><select id="famcivstatus" style="width: auto;" name="famcivstatus[]" required>
+              <option value="">Choose...</option>
+              <option value="Married">Married</option>
+              <option value="Single">Single</option>
+              <option value="Widow">Widow</option>
+              </select>
+        </td>
+        <td><select id="fameduc" style="width: auto;" name="fameduc[]" required>
+              <option value="None">None</option>
+              <option value="Elementary">Elementary</option>
+              <option value="High School">High School</option>
+              <option value="Senior High School">Senior High School</option>
+              <option value="College">College</option>
+              </select>
+        </td>
+        <td><input id="famoccupational" type="text" name="famoccupational[]" style="resize: none;width: 100px;" rows="1"></td>
+        <td>
+        <select id="famcode" style="width: auto;" name="famcode[]" required>
+              <option value="">None</option>
+              <option value="A">A-Older Person</option>
+              <option value="B">B-Lactating</option>
+              <option value="C">C-PWD</option>
+              <option value="D">D-Pregnant Mother</option>
+              <option value="E">E-Solo</option>
+        </select>
+          </td>
+  </tr>
+    </tbody>
+  </table>
+  <center>
+  <div class="buttons">
+    <button style="width: 45%; font-size: 20px;" type="button" onclick="addRow1()">+</button>
+    <button style="width: 45%; background-color: red; font-size: 20px;" type="button" onclick="deleteRow()">-</button>
+  </div>
+  </center>
+  <button type="submit">Submit</button>
+  <script>
+    function addRow1() {
+      var table = document.getElementById("data-table");
+      var i = document.getElementById("data-table").rows.length - 1;
+        var cell = table.insertRow(i)
+        cell.innerHTML = '<tr>\
+        <td><input id="fammember' + i + '" type="text" name="fammember[]" style="resize: none;width: auto;" rows="1"></td>\
+        <td><select style="width: auto;" name="famrelation[]" required>\
+              <option value="">Choose</option>\
+              <option value="Spouse">Spouse</option>\
+              <option value="Child">Child</option>\
+              <option value="Relative">Relative</option>\
+              <option value="Friend">Friend</option>\
+              <option value="Acquaintance">Acquaintance</option>\
+              <option value="Stranger">Stranger</option>\
+              </select>\
+        </td>\
+        <td><input id="famage' + i + '" type="number" name="famage[]" style="resize: none;width: 60px;" rows="1"></td>\
+        <td>\
+          <select id="famgender' + i + '" style="width: auto;" name="famgender[]" required>\
+            <option value="">Choose...</option>\
+            <option value="Male">Male</option>\
+            <option value="Female">Female</option>\
+          </select>\
+          </td>\
+        <td><select id="famcivstatus' + i + '" style="width: auto;" name="famcivstatus[]" required>\
+              <option value="">Choose...</option>\
+              <option value="Married">Married</option>\
+              <option value="Single">Single</option>\
+              <option value="Widow">Widow</option>\
+              </select>\
+        </td>\
+        <td><select id="fameduc' + i + '" style="width: auto;" name="fameduc[]" required>\
+              <option value="None">None</option>\
+              <option value="Elementary">Elementary</option>\
+              <option value="High School">High School</option>\
+              <option value="Senior High School">Senior High School</option>\
+              <option value="College">College</option>\
+              </select>\
+        </td>\
+        <td><input id="famoccupational' + i + '" type="text" name="famoccupational[]" style="resize: none;width: 100px;" rows="1"></td>\
+        <td>\
+        <select id="famcode' + i + '" style="width: auto;" name="famcode[]" required>\
+              <option value="">None</option>\
+              <option value="A">A-Older Person</option>\
+              <option value="B">B-Lactating</option>\
+              <option value="C">C-PWD</option>\
+              <option value="D">D-Pregnant Mother</option>\
+              <option value="E">E-Solo</option>\
+        </select>\
+          </td>\
+  </tr>';
+      }
+      function deleteRow() {
+      var table = document.getElementById("data-table");
+      var i = document.getElementById("data-table").rows.length - 1;
+      if (i > 0) {
+      document.getElementById("data-table").deleteRow(i);
+      }
+      }
+  </script>
+  </form>
+</body>
+</html>

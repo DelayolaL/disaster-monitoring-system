@@ -1,0 +1,11 @@
+{
+    "name": "leo/dafac-db-mon-sys",
+    "require": {
+        "phpoffice/phpspreadsheet": "^1.18"
+    },
+    "autoload": {
+        "psr-4": {
+            "YourNamespace\\": "src/"
+        }
+    }
+}
