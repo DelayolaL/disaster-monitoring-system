@@ -20,6 +20,23 @@ This project simulates real-world administrative workflows used in data manageme
 - Structured database integration (MySQL)
 - Clean and simple web interface
 - Organized data retrieval and display
+  
+---
+
+## 📁 Project Structure
+
+```text
+disaster-monitoring-system/
+├── backup-database/        # Sample/backup database files for testing
+├── screenshots/            # UI previews of the system
+├── src/                    # Main application source code
+│
+├── index.php               # Entry point of the application
+├── package.json            # Project dependencies/config (if used)
+├── package-lock.json
+├── .gitignore
+└── README.md
+```
 
 ---
 
