@@ -32,17 +32,6 @@ This project simulates real-world administrative workflows used in data manageme
 
 ---
 
-## 📁 Project Structure
-src/
-├── (application files)
-index.php
-package.json
-package-lock.json
-.gitignore
-README.md
-
----
-
 ## 🚀 Installation & Setup
 
 To run this project locally:
